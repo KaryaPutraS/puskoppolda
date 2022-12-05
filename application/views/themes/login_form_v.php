@@ -34,19 +34,19 @@
         <form action="" method="post">
             <div class="body bg-gray">
                 <?php if ($jenis == 'member') { ?>
-                <h4>Member Login
+                <h4>Login
                 </h4>
                 <?php } else { ?>
                 <!-- <h4>Admin / Operator Login - <a href="<?php echo site_url('member'); ?>"
                         class="btn btn-primary">Member</a></h4> -->
-                    <h4>Admin / Operator Login</h4>
+                <h4>Admin / Operator Login</h4>
                 <?php } ?>
 
                 <?php
-				if (!empty($pesan)) {
-					echo '<div style="color: red;">' . $pesan . '</div>';
-				}
-				?>
+                if (!empty($pesan)) {
+                    echo '<div style="color: red;">' . $pesan . '</div>';
+                }
+                ?>
                 <div class="form-group">
                     <input type="text" name="u_name" id="u_name" class="form-control" placeholder="Username"
                         value="<?php echo set_value('u_name'); ?>" />
